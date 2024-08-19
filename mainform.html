@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="feed.css">
+</head>
+<body style="background-color:steelblue">
+    <div class="container-fluid-1">
+        <div class="row">   
+        <div class="col-12 col-md=3 text-center" >
+            <h1 style="color:black"><strong>Coderone Customer Feedback Form</strong><br></h1>
+            <strong>This is the form for the customer feedback.</strong><br>
+            <strong>Rate us based on the options given</strong><br>
+            <div style="background-color:beige;color:slateblue;width:300px;margin-left:500px;margin-bottom:5px;border-radius: 5px;"><strong>  1-Excellent  2-Average   3-Poor  </strong><br></div>
+            
+            </div>
+        </div>
+    </div>
+
+            <div class="form text-left container-fluid" style="background-color:peachpuff; width:750px;height:600px;border-radius:8px">
+                
+                <form action="/feedback" method="post">
+                <div>1.How satisfied are you with our product?
+                    <input type="radio" name="satisfaction" id="1"value="1">
+                     <label for="Excellent">1</label>
+                      <input type="radio" name="satisfaction" id="2"value="2">
+                      <label>2</label>
+                       <input type="radio" name="satisfaction" id="3"value="3">
+                        <label for="Poor">3</label></div>
+                2.How likely are you to recommend our product to a friend or colleague?
+                    <input type="radio" name="recommend" id="1"value="1">
+                     <label for="Excellent">1</label>
+                      <input type="radio" name="recommend" id="2"value="2">
+                      <label for="Average">2</label>
+                       <input type="radio" name="recommend" id="3"value="3">
+                        <label for="Poor">3</label><br>
+                3.How would you rate the quality of your product?
+                    <input type="radio" name="rate" id="1"value="1">
+                     <label for="Excellent">1</label>
+                      <input type="radio" name="rate" id="2"value="2">
+                      <label for="Average">2</label>
+                       <input type="radio" name="rate" id="3"value="3">
+                        <label for="Poor">3</label><br>
+
+          
+                4.Did our product met your expectations?
+           
+                    <input type="radio" name="expectation" id="1"value="1">
+                     <label for="Excellent">1</label>
+                      <input type="radio" name="expectation" id="2"value="2">
+                      <label for="Average">2</label>
+                       <input type="radio" name="expectation" id="3"value="3">
+                        <label for="Poor">3</label><br>
+                
+                5.How would you rate the quality of the customer service you received?
+                
+                    <input type="radio" name="service" id="1"value="1">
+                     <label for="Excellent">1</label>
+                      <input type="radio" name="service" id="2"value="2">
+                      <label for="Average">2</label>
+                       <input type="radio" name="service" id="3"value="3">
+                        <label for="Poor">3</label><br>
+                
+                6.How easy was it to navigate to our website/app?
+              
+                    <input type="radio" name="navigation" id="1"value="1">
+                     <label for="Excellent">1</label>
+                      <input type="radio" name="navigation" id="2"value="2">
+                      <label for="Average">2</label>
+                       <input type="radio" name="navigation" id="3"value="3">
+                        <label for="Poor">3</label><br>
+            
+                7.Are there any features you find particularly useful?
+             
+                    <input type="radio" name="features" id="1"value="1">
+                     <label for="Excellent">1</label>
+                      <input type="radio" name="features" id="2"value="2">
+                      <label for="Average">2</label>
+                       <input type="radio" name="features" id="3"value="3">
+                        <label for="Poor">3</label><br>
+                
+              8.How would you rate the value of money to our product?
+           
+                    <input type="radio" name="value" id="1"value="1">
+                     <label for="Excellent">1</label>
+                      <input type="radio" name="value" id="2"value="2">
+                      <label for="Average">2</label>
+                       <input type="radio" name="value" id="3"value="3">
+                        <label for="Poor">3</label><br>
+           
+                9.How smooth was the processing process?
+              
+                    <input type="radio" name="processing" required id="1"value="1">
+                     <label for="Excellent">1</label>
+                      <input type="radio" name="processing" id="2"value="2">
+                      <label for="Average">2</label>
+                       <input type="radio" name="processing" id="3"value="3">
+                        <label for="Poor">3</label><br>
+            
+                10.Was the product delivered on time?
+            
+                    <input type="radio" name="deliver" required id="1"value="1">
+                     <label for="Excellent">1</label>
+                      <input type="radio" name="deliver" id="2"value="2">
+                      <label for="Average">2</label>
+                       <input type="radio" name="deliver" id="3"value="3">
+                        <label for="Poor">3</label><br>
+      
+                11.How responsive was our customer support team?
+               
+                    <input type="radio" name="responsive" id="1"value="1">
+                     <label for="Excellent">1</label>
+                      <input type="radio" name="responsive" id="2"value="2">
+                      <label for="Average">2</label>
+                       <input type="radio" name="responsive" id="3"value="3">
+                        <label for="Poor">3</label><br>
+           
+                12.How would you rate the ease of use of our product/service?
+           
+                    <input type="radio" name="ease_of_use" id="1"value="1">
+                     <label for="Excellent">1</label>
+                      <input type="radio" name="ease_of_use" id="2"value="2">
+                      <label for="Average">2</label>
+                       <input type="radio" name="ease_of_use" id="3"value="3">
+                        <label for="Poor">3</label><br>
+              
+                13.How would you rate the effectiveness of our problem resolution process?
+           
+                    <input type="radio" name="effectiveness" id="1"value="1">
+                     <label for="Excellent">1</label>
+                      <input type="radio" name="effectiveness" id="2"value="2">
+                      <label for="Average">2</label>
+                       <input type="radio" name="effectiveness" id="3"value="3">
+                        <label for="Poor">3</label><br>
+
+           
+                14.How would you rate the packaging of our product?
+                
+                    <input type="radio" name="packaging" id="1"value="1">
+                     <label for="Excellent">1</label>
+                      <input type="radio" name="packaging" id="2"value="2">
+                      <label for="Average">2</label>
+                       <input type="radio" name="packaging" id="3"value="3">
+                        <label for="Poor">3</label><br>
+               
+                15.How would you rate the availability of information about our products/services?
+           
+                    <input type="radio" name="availability" id="1"value="1">
+                     <label for="Excellent">1</label>
+                      <input type="radio" name="availability" id="2"value="2">
+                      <label for="Average">2</label>
+                       <input type="radio" name="availability" id="3"value="3">
+                        <label for="Poor">3</label><br>
+
+             
+                Overall rating of our service
+                     <input type="radio" name="overall" id="1"value="1">
+                     <label for="Excellent">1</label>
+                      <input type="radio" name="overall" id="2"value="2">
+                      <label for="Average">2</label>
+                       <input type="radio" name="overall" id="3"value="3">
+                        <label for="Poor">3</label><br>
+                <div class="button text-center">
+                    <button type="submit">Submit</button>
+                        </div>
+
+                </form>
+                
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+            
+    
+     
+    
+</body>
+</html>

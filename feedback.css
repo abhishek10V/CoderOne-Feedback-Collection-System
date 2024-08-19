@@ -1,0 +1,50 @@
+.title{
+    font-family:"Times New Roman", Times, serif;
+    color:purple;   
+  }
+.link{
+    background-color: orange;
+    border-color:orange;
+    width: 150px;
+}
+back {
+    position:relative;
+    z-index: 1;
+}
+.back::before {
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://res.cloudinary.com/dhxpuuv18/image/upload/v1722699359/aravind/vyke2awz9selryscwd6j.webp') no-repeat center center/cover;
+    opacity: 0.3; /* Adjust this value to change the opacity */
+    z-index: -1;
+}
+.container-fluid-1{
+    
+    font-size: 25px;
+    color:black;
+    background-color: cyan;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.form{
+    color:black;
+    background-color: white;
+    margin-left: 5%;
+    
+    
+  
+}
+.send{
+    font-family:'Times New Roman', Times, serif,Bold;
+    color: white;
+    background-color: purple;
+    }
+.image{
+    width:200px;
+    text-align:center;
+}
+
+

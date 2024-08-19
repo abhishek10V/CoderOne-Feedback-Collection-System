@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coderone Survey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="feedback.css">
+
+<script>
+    function checkError(submitMe) {
+        const loc = window.location.href;
+        if(loc.indexOf("pass")!==-1) {
+            document.getElementById("password_error").innerHTML="Incorrect password!";
+            console.log(loc)
+        }
+        else if(loc.indexOf("uname")!==-1){
+            document.getElementById("username_error").innerHTML="Incorrect username!"
+        }else{
+            if(submitMe){
+                document.getElementById("login").submit();
+            }
+        }
+    }
+</script>
+</head>
+<body onload="checkError()">
+        <div class="back">
+         <div class="container-fluid">
+            <div class="row">
+            <div class="col-12 col-md=3 text-center">
+                <div class="image">
+                <img src="https://res.cloudinary.com/dhxpuuv18/image/upload/v1722690107/aravind/gy4v9edskdrvtxearzug.webp">   
+                </div>
+                
+                                  <br>
+                <h1 class="title">CUSTOMER FEEDBACK COLLECTION SURVEY</h1>
+                <p>Please rate us for our service. Your feedback will greatly pave a way to improve our service</p>
+                <form action="/login" target="_blank" method="post" id="login">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" required onchange="checkError(false)">
+                    <br><span id="username_error" style="color:red"></span>
+                    <br>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" required onchange="checkError(false)">
+                    <br>
+                    <span id="password_error" style="color:red"></span>
+                    <br>
+                   <button class="link text-center" type="submit" onclick=checkError(true)>Login</button>
+                    
+                </form><br>
+                <button class="link text-center" onclick="sign_up.html">Sign Up</button>
+            </div>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
